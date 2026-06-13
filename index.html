@@ -9,29 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="St. Stephen Logo">
-        <div>ST. STEPHEN</div>
-      </a>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-          <li><a href="ministries.html">Get Involved</a></li>
-          <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
-  <!-- HERO -->
   <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/church-entrance.jpg') center/cover no-repeat;">
     <div>
       <h1>Welcome to St. Stephen</h1>
@@ -44,7 +23,6 @@
     </div>
   </section>
 
-  <!-- QUICK ACTIONS -->
   <section class="section">
     <div class="container">
       <h2 class="text-center">What's Happening at St. Stephen</h2>
@@ -53,25 +31,24 @@
           <div class="card-icon">🙏</div>
           <h3>Daily Mass</h3>
           <p>Join us throughout the week and on weekends. Sunday Masses at 8:30am & 11am (English) and 1pm (Español).</p>
-          <a href="mass-times.html" class="btn" style="display: inline-block;">View Schedule</a>
+          <a href="mass-times.html" class="btn">View Schedule</a>
         </div>
         <div class="card">
           <div class="card-icon">📰</div>
           <h3>Weekly Bulletin</h3>
           <p>Stay connected with parish news, upcoming events, and important announcements from our community.</p>
-          <a href="news.html" class="btn" style="display: inline-block;">Read Latest</a>
+          <a href="news.html" class="btn">Read Latest</a>
         </div>
         <div class="card">
           <div class="card-icon">🤝</div>
           <h3>Get Involved</h3>
           <p>Discover ways to serve through our many ministries and volunteer opportunities.</p>
-          <a href="ministries.html" class="btn" style="display: inline-block;">Explore</a>
+          <a href="ministries.html" class="btn">Explore</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SACRAMENTS PREVIEW -->
   <section class="section section-alt">
     <div class="container">
       <div style="max-width: 700px; margin: 0 auto;">
@@ -84,7 +61,6 @@
     </div>
   </section>
 
-  <!-- ABOUT PREVIEW -->
   <section class="section">
     <div class="container">
       <div style="max-width: 700px; margin: 0 auto; text-align: center;">
@@ -105,61 +81,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Mass & Prayer</h4>
-        <ul>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="mass-times.html">Confession</a></li>
-          <li><a href="mass-times.html">Adoration</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Community</h4>
-        <ul>
-          <li><a href="ministries.html">Ministries</a></li>
-          <li><a href="ministries.html">Volunteer</a></li>
-          <li><a href="news.html">Events</a></li>
-          <li><a href="news.html">Bulletin</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Parish History</a></li>
-          <li><a href="about.html">Our Staff</a></li>
-          <li><a href="donate.html">Support Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
-          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
-          <a href="mailto:[email protected]" title="Email">✉</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('active');
-    }
-
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('nav-menu').classList.remove('active');
-      });
-    });
-  </script>
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
 </body>
 </html>

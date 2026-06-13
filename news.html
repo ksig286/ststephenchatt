@@ -8,69 +8,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="St. Stephen Logo">
-        <div>ST. STEPHEN</div>
-      </a>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-          <li><a href="ministries.html">Get Involved</a></li>
-          <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
-  <!-- CONTENT -->
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <h1>News & Bulletin</h1>
       
-      <div style="background: #a08080; color: white; padding: 2rem; border-radius: 8px; text-align: center; margin-bottom: 3rem;">
-        <h2 style="color: white; margin-bottom: 1rem;">Weekly Bulletin</h2>
+      <div class="cta-box">
+        <h2 style="color: white;">Weekly Bulletin</h2>
         <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Stay connected with parish updates, upcoming events, and important announcements.</p>
         <a href="https://ststephenchatt.org/bulletins" class="btn" style="background: white; color: #a08080;">Read Latest Bulletin</a>
       </div>
 
-      <h2>Upcoming Events</h2>
+      <h2 style="margin-top: 3rem;">Upcoming Events</h2>
       <p style="color: #666; margin-bottom: 2rem;">Check our calendar for special liturgies, community gatherings, and faith formation opportunities.</p>
       
-      <div style="display: grid; gap: 1.5rem; margin-bottom: 3rem;">
-        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Men's Welcome Retreat</h3>
-          <p style="color: #666; margin-bottom: 0.5rem;">August 15-16, 2026</p>
-          <p>"As for me and my house, we will serve the LORD." - Joshua 24:15</p>
-          <a href="https://ststephenchatt.org/events">View More Events</a>
-        </div>
-
-        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Jesus Thirsts Weekly</h3>
-          <p style="color: #666; margin-bottom: 0.5rem;">New episodes releasing weekly</p>
-          <p>Explore 52 lessons on the Catholic faith in this inspiring video series with Fr. Chris Alar.</p>
-          <a href="https://ststephenchatt.org/jesus-thirsts">Watch Series</a>
-        </div>
-
-        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Sunday Mass on Facebook</h3>
-          <p style="color: #666; margin-bottom: 0.5rem;">Every Sunday at 11:00 a.m.</p>
-          <p>Watch our live stream on Facebook. Join us in person or online from home.</p>
-          <a href="https://www.facebook.com/StStephenChattanooga">Go to Facebook</a>
-        </div>
+      <div class="content-box">
+        <h3>Men's Welcome Retreat</h3>
+        <p style="color: #666; margin-bottom: 0.5rem;">August 15-16, 2026</p>
+        <p>"As for me and my house, we will serve the LORD." - Joshua 24:15</p>
+        <a href="https://ststephenchatt.org/events">View More Events →</a>
       </div>
 
-      <h2>Parish News</h2>
+      <div class="content-box">
+        <h3>Jesus Thirsts Weekly</h3>
+        <p style="color: #666; margin-bottom: 0.5rem;">New episodes releasing weekly</p>
+        <p>Explore 52 lessons on the Catholic faith in this inspiring video series with Fr. Chris Alar.</p>
+        <a href="https://ststephenchatt.org/jesus-thirsts">Watch Series →</a>
+      </div>
+
+      <div class="content-box">
+        <h3>Sunday Mass on Facebook</h3>
+        <p style="color: #666; margin-bottom: 0.5rem;">Every Sunday at 11:00 a.m.</p>
+        <p>Watch our live stream on Facebook. Join us in person or online from home.</p>
+        <a href="https://www.facebook.com/StStephenChattanooga">Go to Facebook →</a>
+      </div>
+
+      <h2 style="margin-top: 3rem;">Parish News</h2>
       <p style="color: #666;">For the latest news, announcements, and updates from St. Stephen, visit our <a href="https://ststephenchatt.org/news">News page</a> or sign up for Flocknote to receive updates directly.</p>
 
-      <div style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-radius: 8px;">
+      <div class="content-box" style="margin-top: 3rem;">
         <h3>Sign Up for Updates</h3>
         <p>Get parish news, event announcements, and prayer requests delivered to your inbox.</p>
         <a href="https://howdy.flocknote.com/ststephenchat" class="btn" style="display: inline-block; margin-top: 1rem;">Join Flocknote</a>
@@ -78,61 +55,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Mass & Prayer</h4>
-        <ul>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="mass-times.html">Confession</a></li>
-          <li><a href="mass-times.html">Adoration</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Community</h4>
-        <ul>
-          <li><a href="ministries.html">Ministries</a></li>
-          <li><a href="ministries.html">Volunteer</a></li>
-          <li><a href="news.html">Events</a></li>
-          <li><a href="news.html">Bulletin</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Parish History</a></li>
-          <li><a href="about.html">Our Staff</a></li>
-          <li><a href="donate.html">Support Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
-          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
-          <a href="mailto:[email protected]" title="Email">✉</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('active');
-    }
-
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('nav-menu').classList.remove('active');
-      });
-    });
-  </script>
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
 </body>
 </html>

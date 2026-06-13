@@ -8,85 +8,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="St. Stephen Logo">
-        <div>ST. STEPHEN</div>
-      </a>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-          <li><a href="ministries.html">Get Involved</a></li>
-          <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
-  <!-- CONTENT -->
   <section class="section">
     <div class="container" style="max-width: 800px;">
       <h1>Mass Times & Confession</h1>
-
       <h2>Weekly Mass Schedule</h2>
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
-        <tr style="background: #f9f9f9;">
-          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Day</th>
-          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Time</th>
-          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Language</th>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Sunday</td>
-          <td style="padding: 12px;">8:30 a.m. & 11:00 a.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Sunday</td>
-          <td style="padding: 12px;">1:00 p.m.</td>
-          <td style="padding: 12px;">Español</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Monday</td>
-          <td style="padding: 12px;">8:30 a.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Tuesday</td>
-          <td style="padding: 12px;">8:30 a.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Wednesday</td>
-          <td style="padding: 12px;">6:00 p.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Thursday</td>
-          <td style="padding: 12px;">8:30 a.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Friday</td>
-          <td style="padding: 12px;">8:30 a.m. (1st Friday only)</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Friday</td>
-          <td style="padding: 12px;">8:30 a.m. Communion Service</td>
-          <td style="padding: 12px;">Other Fridays</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e5e5e5;">
-          <td style="padding: 12px;">Saturday</td>
-          <td style="padding: 12px;">5:00 p.m.</td>
-          <td style="padding: 12px;">English</td>
-        </tr>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sunday</td><td>8:30 a.m. & 11:00 a.m.</td><td>English</td></tr>
+          <tr><td>Sunday</td><td>1:00 p.m.</td><td>Español</td></tr>
+          <tr><td>Monday</td><td>8:30 a.m.</td><td>English</td></tr>
+          <tr><td>Tuesday</td><td>8:30 a.m.</td><td>English</td></tr>
+          <tr><td>Wednesday</td><td>6:00 p.m.</td><td>English</td></tr>
+          <tr><td>Thursday</td><td>8:30 a.m.</td><td>English</td></tr>
+          <tr><td>Friday</td><td>8:30 a.m. (1st Friday only)</td><td>English</td></tr>
+          <tr><td>Friday</td><td>8:30 a.m. Communion Service</td><td>Other Fridays</td></tr>
+          <tr><td>Saturday</td><td>5:00 p.m.</td><td>English</td></tr>
+        </tbody>
       </table>
 
       <h2>Confession</h2>
@@ -99,7 +45,7 @@
       <h2>Sunday Mass Live Stream</h2>
       <p>Watch our 11:00 a.m. Sunday Mass live on <a href="https://www.facebook.com/StStephenChattanooga">Facebook</a>.</p>
 
-      <div style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-radius: 8px;">
+      <div class="content-box">
         <h3>Questions?</h3>
         <p>Contact us at <strong>(423) 892-1261</strong> or <a href="mailto:[email protected]">[email protected]</a></p>
         <p style="color: #666; font-size: 0.9rem;">Office Hours: Mon-Thurs 8am-4pm | Fri 8am-2pm</p>
@@ -107,61 +53,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Mass & Prayer</h4>
-        <ul>
-          <li><a href="mass-times.html">Mass Times</a></li>
-          <li><a href="mass-times.html">Confession</a></li>
-          <li><a href="mass-times.html">Adoration</a></li>
-          <li><a href="sacraments.html">Sacraments</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Community</h4>
-        <ul>
-          <li><a href="ministries.html">Ministries</a></li>
-          <li><a href="ministries.html">Volunteer</a></li>
-          <li><a href="news.html">Events</a></li>
-          <li><a href="news.html">Bulletin</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Parish History</a></li>
-          <li><a href="about.html">Our Staff</a></li>
-          <li><a href="donate.html">Support Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
-          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
-          <a href="mailto:[email protected]" title="Email">✉</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('active');
-    }
-
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('nav-menu').classList.remove('active');
-      });
-    });
-  </script>
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
 </body>
 </html>

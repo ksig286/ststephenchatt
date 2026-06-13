@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -26,17 +26,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Cinzel', Georgia, serif;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: var(--spacing-md);
+  letter-spacing: 0.5px;
 }
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.5rem; }
 
-/* HEADER */
 header {
   background: var(--primary-color);
   border-bottom: 1px solid var(--border-color);
@@ -61,7 +61,7 @@ header {
   gap: var(--spacing-md);
   text-decoration: none;
   color: var(--text-color);
-  font-family: 'Lora', serif;
+  font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -69,6 +69,24 @@ header {
 .logo img {
   width: 50px;
   height: 50px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logo-main {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo-sub {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #999;
+  letter-spacing: 0.5px;
 }
 
 nav {
@@ -93,7 +111,6 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-/* HAMBURGER MENU */
 .menu-toggle {
   display: none;
   background: none;
@@ -103,7 +120,6 @@ nav a:hover {
   color: var(--text-color);
 }
 
-/* HERO */
 .hero {
   background-size: cover;
   background-position: center;
@@ -124,6 +140,7 @@ nav a:hover {
   font-size: 3.5rem;
   margin-bottom: var(--spacing-md);
   color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 .hero-tagline {
@@ -131,15 +148,16 @@ nav a:hover {
   margin-bottom: var(--spacing-md);
   font-style: italic;
   color: rgba(255,255,255,0.95);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .hero p {
   font-size: 1.1rem;
   margin-bottom: var(--spacing-lg);
   color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
-/* SECTIONS */
 .section {
   padding: var(--spacing-lg) var(--spacing-md);
   max-width: 1200px;
@@ -163,7 +181,6 @@ nav a:hover {
   color: #666;
 }
 
-/* BUTTONS */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -174,25 +191,29 @@ nav a:hover {
   border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s;
   font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(160, 128, 128, 0.2);
 }
 
 .btn:hover {
   background: var(--accent-dark);
+  box-shadow: 0 4px 12px rgba(160, 128, 128, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
   border: 2px solid white;
   color: white;
+  box-shadow: none;
 }
 
 .btn-secondary:hover {
   background: rgba(255,255,255,0.1);
+  box-shadow: 0 2px 8px rgba(255,255,255,0.2);
 }
 
-/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -206,11 +227,14 @@ nav a:hover {
   padding: var(--spacing-lg);
   border-radius: 8px;
   text-align: center;
-  transition: box-shadow 0.3s;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
 }
 
 .card-icon {
@@ -220,6 +244,7 @@ nav a:hover {
 
 .card h3 {
   margin-bottom: var(--spacing-md);
+  color: var(--text-color);
 }
 
 .card p {
@@ -227,7 +252,45 @@ nav a:hover {
   color: #666;
 }
 
-/* FOOTER */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead tr {
+  background: var(--accent-color);
+  color: white;
+}
+
+thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: var(--secondary-color);
+}
+
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
 footer {
   background: var(--text-color);
   color: white;
@@ -246,7 +309,7 @@ footer {
 .footer-section h4 {
   color: var(--accent-color);
   margin-bottom: var(--spacing-md);
-  font-family: 'Lora', serif;
+  font-family: 'Cinzel', serif;
 }
 
 .footer-section ul {
@@ -282,11 +345,12 @@ footer {
   border-radius: 50%;
   color: white;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .social-links a:hover {
   background: var(--accent-dark);
+  transform: scale(1.1);
 }
 
 .footer-bottom {
@@ -297,7 +361,37 @@ footer {
   color: #999;
 }
 
-/* RESPONSIVE */
+.content-box {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.content-box h3 {
+  margin-bottom: 1rem;
+}
+
+.cta-box {
+  background: var(--accent-color);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: var(--spacing-lg) 0;
+  box-shadow: 0 4px 12px rgba(160, 128, 128, 0.2);
+}
+
+.cta-box h2, .cta-box h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-box a {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -334,10 +428,6 @@ footer {
     border-bottom: none;
   }
 
-  .header-container {
-    flex-wrap: wrap;
-  }
-
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
 
@@ -355,5 +445,13 @@ footer {
 
   .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  thead th, tbody td {
+    padding: 8px 12px;
   }
 }
