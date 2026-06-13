@@ -1,0 +1,33 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .favicon-bg { fill: #a08080; }
+      .favicon-fg { fill: white; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="64" height="64" class="favicon-bg" rx="8"/>
+
+  <!-- Cross -->
+  <g class="favicon-fg">
+    <!-- Vertical -->
+    <rect x="28" y="12" width="8" height="28" rx="1"/>
+    <!-- Horizontal -->
+    <rect x="18" y="22" width="28" height="8" rx="1"/>
+  </g>
+
+  <!-- Dove (simplified) -->
+  <g class="favicon-fg">
+    <circle cx="32" cy="18" r="6"/>
+    <ellipse cx="32" cy="28" rx="8" ry="10"/>
+    <polygon points="38,26 48,24 46,30" class="favicon-fg"/>
+  </g>
+
+  <!-- Church arches (simplified) -->
+  <g class="favicon-fg" stroke="#a08080" stroke-width="1.5" fill="none">
+    <path d="M 18 42 Q 18 36 23 36 Q 23 42 23 48"/>
+    <path d="M 28 42 Q 28 36 32 36 Q 32 42 32 48"/>
+    <path d="M 41 42 Q 41 36 46 36 Q 46 42 46 48"/>
+  </g>
+</svg>
