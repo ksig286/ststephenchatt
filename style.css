@@ -455,3 +455,20 @@ footer {
     padding: 8px 12px;
   }
 }
+
+.section h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.section h2:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
