@@ -4,127 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Involved - St. Stephen Catholic Church</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <div class="header-container">
-      <div class="logo">
-        <div class="logo-icon">✝</div>
-        <div>
-          <div>St. Stephen</div>
-          <div style="font-size: 0.75rem; font-weight: 400; color: #666;">Catholic Church</div>
-        </div>
-      </div>
-      <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="St. Stephen Logo">
+        <div>ST. STEPHEN</div>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="mass-times.html">Mass Times</a></li>
           <li><a href="sacraments.html">Sacraments</a></li>
           <li><a href="ministries.html">Get Involved</a></li>
           <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- PAGE HEADER -->
-  <section class="hero" style="min-height: 250px; background: linear-gradient(135deg, #a08080 0%, #8b6f6f 100%);">
-    <div>
-      <h1>Get Involved</h1>
-      <p>Discover ways to live out your faith in community</p>
-    </div>
-  </section>
-
   <!-- CONTENT -->
   <section class="section">
-    <div class="container">
-      <div class="max-width-600" style="margin: 0 auto;">
-        <p class="text-center text-muted" style="font-size: 1.125rem; margin-bottom: 2rem;">
-          St. Stephen is alive with opportunities to serve, pray, grow, and connect. Whether you're looking to deepen your faith or make a difference in our community, there's a ministry for you.
-        </p>
-      </div>
+    <div class="container" style="max-width: 900px;">
+      <h1>Get Involved</h1>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">At St. Stephen, everyone has a role to play. We invite you to share your time, talent, and treasure through our many ministries and service opportunities.</p>
 
-      <h2>Liturgical Ministries</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Lectors</h3>
-          <p>Proclaim God's Word at Mass by serving as a lector. Training provided.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
+      <div style="display: grid; gap: 2rem;">
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Prayer Ministry</h3>
+          <p>Join us in intercessory prayer. Participate in our prayer groups, rosary devotions, and adoration hours.</p>
         </div>
-        <div class="card">
-          <h3>Eucharistic Ministers</h3>
-          <p>Distribute Holy Communion at Mass and to the homebound. Certification available.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Altar Servers</h3>
-          <p>Assist the priest during Mass. Perfect for youth and young adults.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-      </div>
 
-      <h2>Prayer & Spiritual Growth</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Prayer Groups</h3>
-          <p>Join our rosary circles, prayer chains, and contemplative prayer communities.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Join Us</a>
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Liturgical Ministries</h3>
+          <p>Serve as a lector, Eucharistic minister, altar server, or in music ministry. Help lead our community in worship.</p>
         </div>
-        <div class="card">
-          <h3>Adult Faith Formation</h3>
-          <p>Bible studies, theology classes, and spiritual retreats for adult believers.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Youth & Children</h3>
-          <p>Formation programs, youth group, and activities for families.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-      </div>
 
-      <h2>Service & Community</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Social Action</h3>
-          <p>Serve the poor and marginalized through food drives, shelter support, and community outreach.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Get Involved</a>
-        </div>
-        <div class="card">
-          <h3>Pastoral Care</h3>
-          <p>Visit the sick and homebound. Bring comfort through presence and prayer.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-        <div class="card">
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
           <h3>Fellowship Ministry</h3>
-          <p>Build community through social gatherings, dinners, and parish events.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Join Us</a>
+          <p>Build community through gatherings, game days, celebrations, and social events that unite our parish family.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Pastoral Care Ministry</h3>
+          <p>Bring comfort and support to those who are sick, homebound, or grieving. Visit, pray with, and encourage our members.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Social Action Ministry</h3>
+          <p>Live out our Catholic faith by serving those in need through community outreach and social justice efforts.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Health Ministry</h3>
+          <p>Support the physical and spiritual health of our parish members through care, resources, and compassionate service.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Ministry with Children & Youth</h3>
+          <p>Nurture the faith of our young people through Christian formation, youth programs, and mentorship.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>New Evangelization Ministry</h3>
+          <p>Help share the good news of Christ with those seeking faith. Invite, welcome, and accompany newcomers on their spiritual journey.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #a08080;">
+          <h3>Adult Faith Formation</h3>
+          <p>Deepen your knowledge of the faith through adult Bible study, FORMED, and other learning opportunities.</p>
         </div>
       </div>
 
-      <h2>Music & Arts</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Choir</h3>
-          <p>Join our adult or youth choir. No audition required. Music background helpful but not necessary.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Contact Us</a>
-        </div>
-        <div class="card">
-          <h3>Musicians</h3>
-          <p>Contribute your instrumental or vocal talents to our liturgical music program.</p>
-          <a href="about.html" class="btn" style="display: inline-block; font-size: 0.875rem;">Learn More</a>
-        </div>
-      </div>
-
-      <div style="margin-top: 3rem; padding: 2rem; background-color: #f9f9f9; border-radius: 8px;">
-        <h3 style="margin-top: 0; text-align: center;">Ready to Get Involved?</h3>
-        <p style="text-align: center; margin-bottom: 1.5rem;">Start your ministry journey. Contact us with questions or to sign up.</p>
-        <div style="text-align: center;">
-          <a href="about.html" class="btn">Contact Our Office</a>
-        </div>
+      <div style="margin-top: 3rem; padding: 2rem; background: #f0f0f0; border-radius: 8px; text-align: center;">
+        <h3>Ready to Serve?</h3>
+        <p>Contact us to learn more about available ministries and how you can get involved.</p>
+        <p><strong>(423) 892-1261</strong> | <a href="mailto:[email protected]">[email protected]</a></p>
+        <p style="color: #666; font-size: 0.9rem;">Office Hours: Mon-Thurs 8am-4pm | Fri 8am-2pm</p>
       </div>
     </div>
   </section>
@@ -154,17 +117,17 @@
         <h4>Connect</h4>
         <ul>
           <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Staff</a></li>
-          <li><a href="about.html">History</a></li>
+          <li><a href="about.html">Parish History</a></li>
+          <li><a href="about.html">Our Staff</a></li>
           <li><a href="donate.html">Support Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="#" title="Facebook">f</a>
-          <a href="#" title="YouTube">▶</a>
-          <a href="#" title="Email">✉</a>
+          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
+          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
+          <a href="mailto:[email protected]" title="Email">✉</a>
         </div>
       </div>
     </div>
@@ -172,5 +135,18 @@
       <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-menu').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>

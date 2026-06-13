@@ -4,164 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mass Times - St. Stephen Catholic Church</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <div class="header-container">
-      <div class="logo">
-        <div class="logo-icon">✝</div>
-        <div>
-          <div>St. Stephen</div>
-          <div style="font-size: 0.75rem; font-weight: 400; color: #666;">Catholic Church</div>
-        </div>
-      </div>
-      <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="St. Stephen Logo">
+        <div>ST. STEPHEN</div>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="mass-times.html">Mass Times</a></li>
           <li><a href="sacraments.html">Sacraments</a></li>
           <li><a href="ministries.html">Get Involved</a></li>
           <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- PAGE HEADER -->
-  <section class="hero" style="min-height: 250px; background: linear-gradient(135deg, #a08080 0%, #8b6f6f 100%);">
-    <div>
-      <h1>Mass Times</h1>
-      <p>Join us for daily Mass and prayer</p>
-    </div>
-  </section>
-
   <!-- CONTENT -->
   <section class="section">
-    <div class="container max-width-600">
-      <h2>Sunday Mass</h2>
-      <table class="schedule">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Language</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>8:30 AM</strong></td>
-            <td>English</td>
-            <td>Traditional</td>
-          </tr>
-          <tr>
-            <td><strong>10:00 AM</strong></td>
-            <td>English</td>
-            <td>Family-Friendly</td>
-          </tr>
-          <tr>
-            <td><strong>11:30 AM</strong></td>
-            <td>English</td>
-            <td>Main Mass</td>
-          </tr>
-          <tr>
-            <td><strong>1:00 PM</strong></td>
-            <td>Spanish</td>
-            <td>Misa en Español</td>
-          </tr>
-          <tr>
-            <td><strong>5:00 PM</strong></td>
-            <td>English</td>
-            <td>Evening Mass</td>
-          </tr>
-        </tbody>
+    <div class="container" style="max-width: 800px;">
+      <h1>Mass Times & Confession</h1>
+
+      <h2>Weekly Mass Schedule</h2>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+        <tr style="background: #f9f9f9;">
+          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Day</th>
+          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Time</th>
+          <th style="padding: 12px; text-align: left; border-bottom: 2px solid #a08080;">Language</th>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Sunday</td>
+          <td style="padding: 12px;">8:30 a.m. & 11:00 a.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Sunday</td>
+          <td style="padding: 12px;">1:00 p.m.</td>
+          <td style="padding: 12px;">Español</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Monday</td>
+          <td style="padding: 12px;">8:30 a.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Tuesday</td>
+          <td style="padding: 12px;">8:30 a.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Wednesday</td>
+          <td style="padding: 12px;">6:00 p.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Thursday</td>
+          <td style="padding: 12px;">8:30 a.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Friday</td>
+          <td style="padding: 12px;">8:30 a.m. (1st Friday only)</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Friday</td>
+          <td style="padding: 12px;">8:30 a.m. Communion Service</td>
+          <td style="padding: 12px;">Other Fridays</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px;">Saturday</td>
+          <td style="padding: 12px;">5:00 p.m.</td>
+          <td style="padding: 12px;">English</td>
+        </tr>
       </table>
 
-      <h2>Weekday Mass (Mon-Fri)</h2>
-      <table class="schedule">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Days</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>8:00 AM</strong></td>
-            <td>Monday - Friday</td>
-          </tr>
-          <tr>
-            <td><strong>12:15 PM</strong></td>
-            <td>Monday - Friday</td>
-          </tr>
-          <tr>
-            <td><strong>6:00 PM</strong></td>
-            <td>Monday & Wednesday</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Confession</h2>
+      <p><strong>Saturday: 4:00 p.m. - 4:50 p.m.</strong> (English & Español)</p>
+      <p style="color: #666;">Also available other days by appointment. Call <a href="tel:4238921261">(423) 892-1261</a> to schedule.</p>
 
-      <h2>Saturday Mass</h2>
-      <table class="schedule">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>12:15 PM</strong></td>
-            <td>Vigil</td>
-          </tr>
-          <tr>
-            <td><strong>6:00 PM</strong></td>
-            <td>Anticipatory Mass</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Adoration & Rosary</h2>
+      <p>Join us for Adoration and Rosary throughout the week. Visit our <a href="https://ststephenchatt.org/adoration-rosary-schedule">full schedule</a> for times.</p>
 
-      <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e0e0e0;">
+      <h2>Sunday Mass Live Stream</h2>
+      <p>Watch our 11:00 a.m. Sunday Mass live on <a href="https://www.facebook.com/StStephenChattanooga">Facebook</a>.</p>
 
-      <h2>Confessions (Penance & Reconciliation)</h2>
-      <ul class="list">
-        <li>
-          <span class="list-label">Saturday</span>
-          <span class="list-value">4:30 PM - 5:30 PM</span>
-        </li>
-        <li>
-          <span class="list-label">Sunday</span>
-          <span class="list-value">10:45 AM - 11:30 AM</span>
-        </li>
-        <li>
-          <span class="list-label">First Friday of Month</span>
-          <span class="list-value">5:30 PM - 6:30 PM</span>
-        </li>
-      </ul>
-
-      <h2>Eucharistic Adoration</h2>
-      <ul class="list">
-        <li>
-          <span class="list-label">Monday - Friday</span>
-          <span class="list-value">9:00 AM - 5:30 PM</span>
-        </li>
-        <li>
-          <span class="list-label">Saturday</span>
-          <span class="list-value">9:00 AM - 5:30 PM</span>
-        </li>
-        <li>
-          <span class="list-label">Wednesday Afternoon</span>
-          <span class="list-value">1:00 PM - 5:30 PM (in Church)</span>
-        </li>
-      </ul>
-
-      <div style="margin-top: 3rem; padding: 2rem; background-color: #f9f9f9; border-radius: 8px; text-align: center;">
-        <h3 style="margin-top: 0;">Need More Information?</h3>
-        <p style="margin-bottom: 1.5rem;">Have questions about a specific sacrament or liturgy?</p>
-        <a href="about.html" class="btn">Contact Us</a>
+      <div style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-radius: 8px;">
+        <h3>Questions?</h3>
+        <p>Contact us at <strong>(423) 892-1261</strong> or <a href="mailto:[email protected]">[email protected]</a></p>
+        <p style="color: #666; font-size: 0.9rem;">Office Hours: Mon-Thurs 8am-4pm | Fri 8am-2pm</p>
       </div>
     </div>
   </section>
@@ -191,17 +132,17 @@
         <h4>Connect</h4>
         <ul>
           <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Staff</a></li>
-          <li><a href="about.html">History</a></li>
+          <li><a href="about.html">Parish History</a></li>
+          <li><a href="about.html">Our Staff</a></li>
           <li><a href="donate.html">Support Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="#" title="Facebook">f</a>
-          <a href="#" title="YouTube">▶</a>
-          <a href="#" title="Email">✉</a>
+          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
+          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
+          <a href="mailto:[email protected]" title="Email">✉</a>
         </div>
       </div>
     </div>
@@ -209,5 +150,18 @@
       <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-menu').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>

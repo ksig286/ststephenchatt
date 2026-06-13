@@ -4,88 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sacraments - St. Stephen Catholic Church</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <div class="header-container">
-      <div class="logo">
-        <div class="logo-icon">✝</div>
-        <div>
-          <div>St. Stephen</div>
-          <div style="font-size: 0.75rem; font-weight: 400; color: #666;">Catholic Church</div>
-        </div>
-      </div>
-      <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="St. Stephen Logo">
+        <div>ST. STEPHEN</div>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="mass-times.html">Mass Times</a></li>
           <li><a href="sacraments.html">Sacraments</a></li>
           <li><a href="ministries.html">Get Involved</a></li>
           <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- PAGE HEADER -->
-  <section class="hero" style="min-height: 250px; background: linear-gradient(135deg, #a08080 0%, #8b6f6f 100%);">
-    <div>
-      <h1>Sacraments</h1>
-      <p>Sacred encounters with God's grace</p>
-    </div>
-  </section>
-
   <!-- CONTENT -->
   <section class="section">
-    <div class="container max-width-600">
-      <p class="text-center text-muted" style="font-size: 1.125rem; margin-bottom: 2rem;">
-        The sacraments are sacred signs and means of grace that connect us to Christ and strengthen our faith community.
-      </p>
+    <div class="container" style="max-width: 900px;">
+      <h1>The Seven Sacraments</h1>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">A sacrament is a visible form of invisible grace—God's gift to us for our salvation and spiritual growth.</p>
 
-      <h2 style="margin-top: 2rem;">Baptism</h2>
-      <p>Baptism is the sacrament of initiation. Through Baptism, we become children of God and members of the Church. Whether you have questions about infant baptism or are interested in adult baptism, our parish team is here to guide you.</p>
-      <p><strong>Questions? <a href="about.html">Contact us</a> to schedule a consultation.</strong></p>
-
-      <h2>Confirmation</h2>
-      <p>Confirmation strengthens the gifts received in Baptism. Young people and adults deepen their commitment to Christ and receive the Holy Spirit's grace to live as faithful Catholics. Registration for Confirmation preparation takes place in the fall.</p>
-      <p><strong>Learn more or register: <a href="about.html">Contact our office</a></strong></p>
-
-      <h2>Eucharist (First Communion)</h2>
-      <p>The Eucharist is the source and center of Catholic life. Children typically prepare for their First Communion in second grade. We offer both English and Spanish-language programs.</p>
-      <p><strong>Program details and dates: <a href="about.html">Contact us for information</a></strong></p>
-
-      <h2>Penance & Reconciliation</h2>
-      <p>Through Penance, we receive God's mercy and are reconciled with the Church. Confession is available at regular times each week. Reconciliation is essential to living a full sacramental life.</p>
-      <p><strong>Confession times: <a href="mass-times.html">View Mass & Confession Schedule</a></strong></p>
-
-      <h2>Marriage</h2>
-      <p>Marriage is a sacred covenant. St. Stephen provides marriage preparation, spiritual guidance, and support for engaged couples. We celebrate marriage as an essential ministry of the Church.</p>
-      <p><strong>Engaged? <a href="about.html">Contact us at least 6 months before your wedding.</a></strong></p>
-
-      <h2>Holy Orders (Priesthood & Diaconate)</h2>
-      <p>God calls men to serve as priests and permanent deacons. If you feel called to Holy Orders or simply want to learn more, our pastoral staff welcomes your questions.</p>
-      <p><strong>Vocational counseling available: <a href="about.html">Speak with our pastor</a></strong></p>
-
-      <h2>Anointing of the Sick</h2>
-      <p>The Anointing of the Sick brings spiritual healing and comfort to those facing serious illness. This sacrament is available to the homebound and hospitalized. Call our office to request a priest.</p>
-      <p><strong>Need this sacrament? <a href="about.html">Contact us</a></strong></p>
-
-      <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e0e0e0;">
-
-      <h2>Becoming Catholic (OCIA)</h2>
-      <p>Are you interested in learning more about Catholicism or preparing to enter the Church? Our Order of Christian Initiation of Adults (OCIA) program welcomes inquirers, catechumens, and candidates.</p>
-      <p><strong>Next session: <a href="about.html">Contact our office for dates and registration.</a></strong></p>
-
-      <div style="margin-top: 3rem; padding: 2rem; background-color: #f9f9f9; border-radius: 8px;">
-        <h3 style="margin-top: 0; text-align: center;">Have Questions?</h3>
-        <p style="text-align: center; margin-bottom: 1.5rem;">Our pastoral staff is ready to help. Reach out with any questions about the sacraments or how to prepare.</p>
-        <div style="text-align: center;">
-          <a href="about.html" class="btn">Contact Us</a>
+      <div style="display: grid; gap: 2rem;">
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Baptism</h3>
+          <p>Baptism is the sacrament of new birth in Christ. Through baptism, we are reborn into God's family and begin our journey of faith.</p>
+          <p><a href="https://ststephenchatt.org/baptism">Learn more about Baptism preparation</a></p>
         </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Confirmation</h3>
+          <p>Confirmation is the sacrament of spiritual strength. Like the Apostles who received the Holy Spirit at Pentecost, the confirmed are sealed with the gifts of the Holy Spirit to live courageously as Christ's witnesses.</p>
+          <p><a href="https://ststephenchatt.org/confirmation-1">Learn more about Confirmation</a></p>
+        </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Eucharist</h3>
+          <p>The Eucharist is the sacrament of Christ's presence. In receiving the Body and Blood of Christ, we are nourished spiritually and united as one body in the Church.</p>
+          <p><a href="https://ststephenchatt.org/first-holy-communion">Learn more about First Holy Communion</a></p>
+        </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Penance & Reconciliation</h3>
+          <p>In the sacrament of Penance, we receive God's healing and forgiveness. Confession is available Saturdays from 4:00-4:50 p.m., and by appointment on other days.</p>
+          <p><a href="https://ststephenchatt.org/penance-reconciliation">Learn more about Reconciliation</a></p>
+        </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Anointing of the Sick</h3>
+          <p>The Anointing of the Sick brings spiritual and physical comfort to those suffering illness or facing the end of life. This sacrament restores hope and strength through God's grace.</p>
+          <p><a href="https://ststephenchatt.org/anointing-of-the-sick">Learn more about Anointing of the Sick</a></p>
+        </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Holy Orders</h3>
+          <p>Holy Orders is the sacrament through which Christ's mission is carried on in the Church through bishops, priests, and deacons.</p>
+          <p><a href="https://ststephenchatt.org/holy-orders">Learn more about Holy Orders</a></p>
+        </div>
+
+        <div style="border-left: 4px solid #a08080; padding-left: 1.5rem;">
+          <h3>Matrimony</h3>
+          <p>Matrimony is the sacrament by which a man and woman unite their lives in a permanent covenant of love, reflecting Christ's love for the Church.</p>
+          <p><a href="https://ststephenchatt.org/marriage">Learn more about Marriage preparation</a></p>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-radius: 8px;">
+        <h3>Questions About the Sacraments?</h3>
+        <p>Contact us to learn more about sacrament preparation and requirements.</p>
+        <p><strong>(423) 892-1261</strong> | <a href="mailto:[email protected]">[email protected]</a></p>
       </div>
     </div>
   </section>
@@ -115,17 +113,17 @@
         <h4>Connect</h4>
         <ul>
           <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Staff</a></li>
-          <li><a href="about.html">History</a></li>
+          <li><a href="about.html">Parish History</a></li>
+          <li><a href="about.html">Our Staff</a></li>
           <li><a href="donate.html">Support Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="#" title="Facebook">f</a>
-          <a href="#" title="YouTube">▶</a>
-          <a href="#" title="Email">✉</a>
+          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
+          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
+          <a href="mailto:[email protected]" title="Email">✉</a>
         </div>
       </div>
     </div>
@@ -133,5 +131,18 @@
       <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-menu').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>

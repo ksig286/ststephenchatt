@@ -12,21 +12,19 @@
   <!-- HEADER -->
   <header>
     <div class="header-container">
-      <div class="logo">
-        <img src="images/logo.svg" alt="St. Stephen Logo" style="width: 50px; height: 50px;">
-        <div>
-          <div>St. Stephen</div>
-          <div style="font-size: 0.75rem; font-weight: 400; color: #666;">Catholic Church</div>
-        </div>
-      </div>
-      <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="St. Stephen Logo">
+        <div>ST. STEPHEN</div>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="mass-times.html">Mass Times</a></li>
           <li><a href="sacraments.html">Sacraments</a></li>
           <li><a href="ministries.html">Get Involved</a></li>
           <li><a href="news.html">News & Bulletin</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="donate.html">Donate</a></li>
         </ul>
       </nav>
@@ -38,7 +36,7 @@
     <div>
       <h1>Welcome to St. Stephen</h1>
       <p class="hero-tagline">Faith, Love and Truth</p>
-      <p>A vibrant Catholic community in Chattanooga, TN</p>
+      <p>A vibrant Catholic community serving Chattanooga with charity, courage, and humble service.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="mass-times.html" class="btn">View Mass Times</a>
         <a href="news.html" class="btn btn-secondary">Read Bulletin</a>
@@ -49,24 +47,24 @@
   <!-- QUICK ACTIONS -->
   <section class="section">
     <div class="container">
-      <h2 class="text-center">What's Happening</h2>
+      <h2 class="text-center">What's Happening at St. Stephen</h2>
       <div class="cards">
         <div class="card">
           <div class="card-icon">🙏</div>
           <h3>Daily Mass</h3>
-          <p>Join us for Mass throughout the week and on weekends.</p>
+          <p>Join us throughout the week and on weekends. Sunday Masses at 8:30am & 11am (English) and 1pm (Español).</p>
           <a href="mass-times.html" class="btn" style="display: inline-block;">View Schedule</a>
         </div>
         <div class="card">
           <div class="card-icon">📰</div>
           <h3>Weekly Bulletin</h3>
-          <p>Stay updated on parish news, events, and announcements.</p>
+          <p>Stay connected with parish news, upcoming events, and important announcements from our community.</p>
           <a href="news.html" class="btn" style="display: inline-block;">Read Latest</a>
         </div>
         <div class="card">
           <div class="card-icon">🤝</div>
           <h3>Get Involved</h3>
-          <p>Discover ministries, volunteer opportunities, and prayer groups.</p>
+          <p>Discover ways to serve through our many ministries and volunteer opportunities.</p>
           <a href="ministries.html" class="btn" style="display: inline-block;">Explore</a>
         </div>
       </div>
@@ -78,7 +76,7 @@
     <div class="container">
       <div style="max-width: 700px; margin: 0 auto;">
         <h2 class="text-center">Life in the Church</h2>
-        <p class="text-center text-muted">From baptism to marriage, St. Stephen celebrates life's sacred moments. Learn more about our sacraments and how to prepare.</p>
+        <p class="text-center text-muted">The seven sacraments are sacred signs through which God's grace is made visible and active in our lives—from Baptism through marriage, reconciliation, and beyond.</p>
         <div style="text-align: center; margin-top: 2rem;">
           <a href="sacraments.html" class="btn">Learn About Sacraments</a>
         </div>
@@ -91,10 +89,11 @@
     <div class="container">
       <div style="max-width: 700px; margin: 0 auto; text-align: center;">
         <h2>Our Community</h2>
-        <p>St. Stephen is a welcoming faith community dedicated to living out Jesus' mission. We serve our parish with charity, courage, and humble service.</p>
+        <p>St. Stephen is a welcoming Catholic parish dedicated to living out Christ's mission of love and service. We celebrate the sacraments, nurture faith formation for all ages, and serve our community with compassion.</p>
         <p style="margin-top: 1.5rem;">
           <strong>📍 7111 Lee Hwy, Chattanooga, TN 37421</strong><br>
-          <strong>📞 (423) 892-1261</strong>
+          <strong>📞 (423) 892-1261</strong><br>
+          <strong>✉ <a href="mailto:[email protected]">[email protected]</a></strong>
         </p>
         <p class="text-muted" style="font-size: 0.875rem; margin-top: 1rem;">
           Office Hours: Mon-Thurs 8am-4pm | Fri 8am-2pm
@@ -131,17 +130,17 @@
         <h4>Connect</h4>
         <ul>
           <li><a href="about.html">Contact Us</a></li>
-          <li><a href="about.html">Staff</a></li>
-          <li><a href="about.html">History</a></li>
+          <li><a href="about.html">Parish History</a></li>
+          <li><a href="about.html">Our Staff</a></li>
           <li><a href="donate.html">Support Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="#" title="Facebook">f</a>
-          <a href="#" title="YouTube">▶</a>
-          <a href="#" title="Email">✉</a>
+          <a href="https://www.facebook.com/StStephenChattanooga" title="Facebook">f</a>
+          <a href="https://www.youtube.com/channel/UC2gbDCCxsNctLYcWI_7kT1Q" title="YouTube">▶</a>
+          <a href="mailto:[email protected]" title="Email">✉</a>
         </div>
       </div>
     </div>
@@ -149,5 +148,18 @@
       <p>&copy; 2026 St. Stephen Catholic Church. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('nav-menu').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
